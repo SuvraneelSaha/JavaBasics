@@ -39,6 +39,6 @@ public class O1 {
         // here we have used format specifier %d along with the function printf which is preset inside the out object
         // and that out object is present inside the System class which is present inside the lang package
 
-        // whereas the Scanner class is present inside the util package 
+        // whereas the Scanner class is present inside the util package
     }
 }
