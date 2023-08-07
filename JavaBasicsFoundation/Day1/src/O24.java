@@ -12,9 +12,14 @@ public class O24 {
         double r = in.nextDouble();
         System.out.println("No. of times interest is compounded per year");
         int n = in.nextInt();
-        double amount;
-        amount = p*(1+(r/n));
-        amount = Math.pow(amount,(n*t));
-        System.out.println("Amount = "+(int)amount);
+
+        double exponent = n * t;
+        double half = 1 + (r/100);
+        double power = Math.pow(half,exponent);
+
+        double Total = p * power;
+
+        System.out.printf("the amount = %f",Total);
     }
 }
+// Formula used = Amount = Principle*(1+(rate / 100))^time
